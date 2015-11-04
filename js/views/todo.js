@@ -162,7 +162,7 @@ function View(collection) {
     // a DELETE request and returns a promise.
     // So if map our array of complete models to
     // `destroy()` calls we will get back an array
-    // of primises.
+    // of promises.
     let deleteRequests = completeModels.map(m => m.destroy());
     // Since we have an array of promises we can use
     // `Promise.all` to be notified when all of them

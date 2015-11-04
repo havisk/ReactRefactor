@@ -1,10 +1,11 @@
-import $ from 'jquery';
-import _ from 'underscore';
-import moment from 'moment';
+i
+i
 import Backbone from 'backbone';
 import parse from './parse_auth';
 import {TodoCollection} from './resources';
-import {TodoView} from './views';
+import Todos from './todos';
+import React from 'react';
+import ReactDom from 'react-dom';
 
 $.ajaxSetup({
   headers: {
@@ -22,4 +23,3 @@ todos.fetch().then(function() {
 });
 
 
-console.log('Hello, World');
